@@ -84,11 +84,12 @@ class Programa_principal
                     if (!encontrado)
 
                     {
-                        System.Console.WriteLine("❌ Contacto no encontrado.");
+                        System.Console.WriteLine(" Contacto no encontrado.");
                     }
                     
                     break;
                 case 4:
+                //muestra un mensaje de salida
                             System.Console.WriteLine("Saliendo del programa...");
                             break;
                         default:
