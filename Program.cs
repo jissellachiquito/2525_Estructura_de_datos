@@ -58,7 +58,7 @@ class Programa_principal
 
                         for (int i = 0; i < cantidad; i++)
                         {
-                            contactos[i].MostrarContacto(); // llama al método de la clase para mostrar datos
+                            contactos[i].MostrarContacto(); //llama al metodo de la clase para mostrar datos
                         }
 
                     }
@@ -68,7 +68,7 @@ class Programa_principal
                     System.Console.Write("Ingrese el nombre a buscar: ");
                     string nombreBuscado = System.Console.ReadLine()!;
                     
-                    bool encontrado = false; // operacion booleana para saber si se encontro el contacto
+                    bool encontrado = false; //operacion booleana para saber si se encontro el contacto
 
                     for (int i = 0; i < cantidad; i++)
                     {
@@ -89,16 +89,16 @@ class Programa_principal
                     
                     break;
                 case 4:
-                //muestra un mensaje de salida
-                            System.Console.WriteLine("Saliendo del programa...");
-                            break;
-                        default:
-                            System.Console.WriteLine("Opción no valida.");
-                            break;
-                        }
+                    //muestra un mensaje de salida
+                    System.Console.WriteLine("Saliendo del programa...");
+                    break;
+                default:
+                    System.Console.WriteLine("Opción no valida.");
+                    break;
+                }
 
-                        System.Console.WriteLine(); // Espacio entre repeticiones
-                    }
+                    System.Console.WriteLine(); // Espacio entre repeticiones
+                }
         while (opcion != 4);
     }
 }
