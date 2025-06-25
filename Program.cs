@@ -48,8 +48,20 @@ class Programa_principal
                     break;
                 case 2:
                     //mostrar contactos
-                    
-                    
+                    if (cantidad == 0)
+                    {
+                        System.Console.WriteLine("No hay contactos registrados.");
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("=== LISTA DE CONTACTOS ===");
+
+                        for (int i = 0; i < cantidad; i++)
+                        {
+                            contactos[i].MostrarContacto(); // llama al método de la clase para mostrar datos
+                        }
+
+                    }
                     break;
                 case 3:
                     //buscar un contacto por nombre
