@@ -65,17 +65,39 @@ class Programa_principal
                     break;
                 case 3:
                     //buscar un contacto por nombre
+                    System.Console.Write("Ingrese el nombre a buscar: ");
+                    string nombreBuscado = System.Console.ReadLine()!;
+                    
+                    bool encontrado = false; // operacion booleana para saber si se encontro el contacto
+
+                    for (int i = 0; i < cantidad; i++)
+                    {
+                        if (contactos[i].Nombres.ToLower() == nombreBuscado.ToLower())
+                        {
+                            System.Console.WriteLine("Contacto encontrado:");
+                            contactos[i].MostrarContacto();
+                            encontrado = true;
+                            break; //sale del bucle si lo encuentra
+                        }
+                    }
+
+                    if (!encontrado)
+
+                    {
+                        System.Console.WriteLine("❌ Contacto no encontrado.");
+                    }
+                    
                     break;
                 case 4:
-                    System.Console.WriteLine("Saliendo del programa...");
-                    break;
-                default:
-                    System.Console.WriteLine("Opción no valida.");
-                    break;
-            }
+                            System.Console.WriteLine("Saliendo del programa...");
+                            break;
+                        default:
+                            System.Console.WriteLine("Opción no valida.");
+                            break;
+                        }
 
-            System.Console.WriteLine(); // Espacio entre repeticiones
-        }
+                        System.Console.WriteLine(); // Espacio entre repeticiones
+                    }
         while (opcion != 4);
     }
 }
