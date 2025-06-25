@@ -43,11 +43,13 @@ class Programa_principal
                     // Crear y guardar el nuevo contacto
                     contactos[cantidad] = new agenda_telefonica(nombre, telefono, edad, correo, direccion);
                     cantidad++; // Aumentar el contador
-                    
+
                     System.Console.WriteLine("Contacto agregado exitosamente...");
                     break;
                 case 2:
                     //mostrar contactos
+                    
+                    
                     break;
                 case 3:
                     //buscar un contacto por nombre

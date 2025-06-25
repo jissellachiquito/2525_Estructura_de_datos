@@ -16,5 +16,16 @@ public class agenda_telefonica
         Correo = correo;
         Direccion = direccion;
     }
+    //metodo para mostrar los datos del contacto
+    public void MostrarContacto()
+    {
+        System.Console.WriteLine("Nombre: " + Nombres);
+        System.Console.WriteLine("Telefono: " + Telefono);
+        System.Console.WriteLine("Edad: " + Edad);
+        System.Console.WriteLine("Correo: " + Correo);
+        System.Console.WriteLine("Direccion: " + Direccion);
+        System.Console.WriteLine("--------------------------");
+    }
+
 
 }
