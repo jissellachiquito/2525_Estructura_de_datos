@@ -50,7 +50,15 @@ class Curso
         }  
         notas.Clear();//limpia la lista por si se ejecuta varias veces
 
-        
+        //pedir nota por asignatura
+        foreach (string asignatura in asignaturas)
+        {
+            System.Console.Write("¿Que nota has sacado en " + asignatura + "? ");
+            string entrada = System.Console.ReadLine();
+            double nota = double.Parse(entrada);
+            notas.Add(nota);
+        }
+
     }
 
 }
