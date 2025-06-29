@@ -1,9 +1,10 @@
 //EJERCICIO 1:
 //CREAR UNA LISTA DE ASIGNATURAS 
 
-//crear clase
+//crear clase curso
 class Curso
-{    private List<string> asignaturas;
+{
+    private List<string> asignaturas;
 
     //constructor para inicializar la lista de asignaturas 
 
@@ -12,7 +13,7 @@ class Curso
         asignaturas = new List<string>() { "Ciencias Naturales", "Estudio Sociales", "Matematicas", "Educacion Fisica", "Lenguaje" };
     }
 
-//metodo que muestra las asignaturas 
+    //metodo que muestra las asignaturas 
     public void MostrarAsignaturas()
     {
         foreach (string asignatura in asignaturas)
@@ -22,5 +23,8 @@ class Curso
     }
 
 }
+
+
+
 
 
