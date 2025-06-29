@@ -41,7 +41,16 @@ class Curso
     //EJERCICIO 3:pedir y mostrar las notas 
     public void Pedir_Notas_Y_Mostrar_Resultados()
     {
-       
+        System.Console.WriteLine("=====INGRESO DE NOTAS=====");
+
+        if (notas == null)//verifica si la lista notas no ha sido inicializada o sino muestra un mensaje
+        {
+            System.Console.WriteLine("Lista notas es null.");
+            return;
+        }  
+        notas.Clear();//limpia la lista por si se ejecuta varias veces
+
+        
     }
 
 }
