@@ -4,8 +4,9 @@ class Programa
 {
     private static void Main()
     {
-        System.Console.WriteLine("      LISTA DE AISGANTURAS     ");
+        System.Console.WriteLine("      LISTA DE ASIGNATURAS     ");
         System.Console.WriteLine("===============================");
+
         Curso curso = new Curso();
         curso.MostrarAsignaturas();
     }

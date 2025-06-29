@@ -19,10 +19,13 @@ class Curso
         foreach (string asignatura in asignaturas)
         {
             System.Console.WriteLine(asignatura);//imprime cada asignatura 
+            System.Console.WriteLine("Yo estudio " + asignatura);//EJERCICIO 2: mostrar yo estudio en cada asignatura
         }
     }
 
 }
+
+         
 
 
 
