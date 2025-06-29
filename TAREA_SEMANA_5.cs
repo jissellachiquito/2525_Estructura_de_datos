@@ -59,6 +59,12 @@ class Curso
             notas.Add(nota);
         }
 
+        //mostrar resultados
+        System.Console.WriteLine("======RESULTADOS======");
+        for (int i = 0; i < asignaturas.Count; i++)
+        {
+            System.Console.WriteLine("En " + asignaturas[i] +" has sacado " + notas[i]);
+        }
     }
 
 }
