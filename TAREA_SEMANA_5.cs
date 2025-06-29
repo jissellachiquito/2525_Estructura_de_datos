@@ -69,6 +69,11 @@ class Curso
 
 }
 
+//EJERCICIO 4:
+//GANADORES DE LA LOTERIA 
+
+
+
 
 
 
