@@ -8,8 +8,9 @@ class Programa
         System.Console.WriteLine("===============================");
 
         Curso curso = new Curso();
-        curso.Mostrar_Asignaturas();       // Ejercicio 1
-        curso.Mostrar_Frase_Estudio();    // Ejercicio 2
+        curso.Mostrar_Asignaturas();       //Ejercicio 1
+        curso.Mostrar_Frase_Estudio();    //Ejercicio 2
+        curso.Pedir_Notas_Y_Mostrar_Resultados();    //Ejercicio 3
     }
 }
 

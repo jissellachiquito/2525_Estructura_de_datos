@@ -4,13 +4,18 @@
 //crear clase curso
 class Curso
 {
+    //declaracion de listas 
     private List<string> asignaturas;
+    private List<double> notas;
 
-    //constructor para inicializar la lista de asignaturas 
-
+    
+    //constructor para inicializar la lista de asignaturas y la lista de notas 
     public Curso()
     {
         asignaturas = new List<string>() { "Ciencias Naturales", "Estudio Sociales", "Matematicas", "Educacion Fisica", "Lenguaje" };
+
+        notas = new List<double>();  // inicualizar la lista de notas
+
     }
 
     //metodo que muestra las asignaturas 
@@ -22,6 +27,7 @@ class Curso
 
         }
     }
+
     //EJERCICIO 2: mostrar yo estudio en cada asignatura
     public void Mostrar_Frase_Estudio()
     {
@@ -31,9 +37,39 @@ class Curso
             System.Console.WriteLine("Yo estudio " + asignatura);
         }
     }
-    //EJERCICIO 3: pedir notas y mostrar resultados
+
+    //EJERCICIO 3:pedir y mostrar las notas 
+    public void Pedir_Notas_Y_Mostrar_Resultados()
+    {
+       
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+   
+
+
+
 
 
          
