@@ -1,0 +1,10 @@
+//EJERCICIO 1:
+//CREAR UNA LISTA DE ASIGNATURAS Y MOSTARLA EN CONSOLA 
+
+//crear clase
+class Grado
+{
+
+}
+
+
