@@ -8,7 +8,8 @@ class Programa
         System.Console.WriteLine("===============================");
 
         Curso curso = new Curso();
-        curso.MostrarAsignaturas();
+        curso.MostrarAsignaturas();       // Ejercicio 1
+        curso.MostrarFrasesEstudio();    // Ejercicio 2
     }
 }
 
