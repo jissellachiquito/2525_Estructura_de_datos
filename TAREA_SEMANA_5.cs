@@ -80,7 +80,21 @@ class Curso
         }
 
         bool hayReprobadas = false; //saber si hay alguna asignatura reprobada
-        
+        for (int i = 0; i < notas.Count; i++)//recorre todas las asignaturas junto con sus notas
+        {
+
+            if (notas[i] < 7) //si la nota es menor que 7 es reprobada
+            {
+                System.Console.WriteLine("Debes repetir: " + asignaturas[i]);
+                hayReprobadas = true;
+            }
+        }
+
+        if (!hayReprobadas) //si no se encontro ninguna asignatura reprobada
+
+        {
+            System.Console.WriteLine("¡Felicidades! No tienes asignaturas reprobadas.");
+        }
 
     }          
 
