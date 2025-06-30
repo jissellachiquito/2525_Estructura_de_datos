@@ -72,13 +72,14 @@ class Curso
     {
         System.Console.WriteLine("====== ASIGNATURAS REPROBADAS ======");
 
-        // Verifica si ya se ingresaron notas
+        //verifica si ya se ingresaron notas
         if (notas.Count != asignaturas.Count)
         {
             System.Console.WriteLine("Primero debes ingresar las notas");
             return;
         }
 
+        bool hayReprobadas = false; //saber si hay alguna asignatura reprobada
         
 
     }          
