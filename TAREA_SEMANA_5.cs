@@ -5,16 +5,16 @@
 class Curso
 {
     //declaracion de listas 
-    private List<string> asignaturas;
-    private List<double> notas;
+    private System.Collections.Generic.List<string> asignaturas;
+    private System.Collections.Generic.List<double> notas;
 
-    
     //constructor para inicializar la lista de asignaturas y la lista de notas 
     public Curso()
     {
-        asignaturas = new List<string>() { "Ciencias Naturales", "Estudio Sociales", "Matematicas", "Educacion Fisica", "Lenguaje" };
+        asignaturas = new System.Collections.Generic.List<string>() { "Ciencias Naturales", "Estudio Sociales", "Matematicas", "Educacion Fisica", "Lenguaje" };
 
-        notas = new List<double>();  // inicualizar la lista de notas
+        // inicualizar la lista de notas
+        notas = new System.Collections.Generic.List<double>();
 
     }
 
@@ -73,9 +73,16 @@ class Curso
 //GANADORES DE LA LOTERIA 
 
 //crear clase loteria
-class Loteria
+public class Loteria
 {
-    
+     public void Ejecutar()
+    {
+        //usamos una lista  para almacenar los números ganadores
+        System.Collections.Generic.List<int> awarded = new System.Collections.Generic.List<int>();
+
+        
+    }
+
 }
 
 

@@ -1,5 +1,5 @@
 ﻿
-//clase para imprimir el programa
+//clase para imprimir el programa de los ejercicios/(tarea 5) 
 class Programa 
 {
     private static void Main()
@@ -11,6 +11,13 @@ class Programa
         curso.Mostrar_Asignaturas();       //Ejercicio 1
         curso.Mostrar_Frase_Estudio();    //Ejercicio 2
         curso.Pedir_Notas_Y_Mostrar_Resultados();    //Ejercicio 3
+        
+
+        Loteria ganadores = new Loteria();   // Ejercicio 4
+        ganadores.Ejecutar();     
+        
+
+
     }
 }
 
