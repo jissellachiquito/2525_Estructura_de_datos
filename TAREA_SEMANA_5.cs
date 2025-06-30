@@ -100,7 +100,20 @@ public class Loteria
         //ordenar la lista de menor a mayor
         awarded.Sort();
 
-       
+        //muestra los numeros ordenados
+        System.Console.WriteLine("Los números ganadores son:");
+        System.Console.Write("[");
+
+        for (int i = 0; i < awarded.Count; i++)
+        {
+            System.Console.Write(awarded[i]);
+            if (i < awarded.Count - 1)
+            {
+                System.Console.Write(", ");
+            }
+        }
+
+        System.Console.WriteLine("]");
     }
 
 }
