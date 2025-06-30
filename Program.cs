@@ -11,7 +11,7 @@ class Programa
         curso.Mostrar_Asignaturas();       //Ejercicio 1
         curso.Mostrar_Frase_Estudio();    //Ejercicio 2
         curso.Pedir_Notas_Y_Mostrar_Resultados();    //Ejercicio 3
-        
+        curso.Mostrar_Asignaturas_Reprobadas();  //Ejercicio 5
 
         Loteria ganadores = new Loteria();   // Ejercicio 4
         ganadores.Ejecutar();     

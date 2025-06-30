@@ -47,7 +47,7 @@ class Curso
         {
             System.Console.WriteLine("Lista notas es null.");
             return;
-        }  
+        }
         notas.Clear();//limpia la lista por si se ejecuta varias veces
 
         //pedir nota por asignatura
@@ -63,9 +63,16 @@ class Curso
         System.Console.WriteLine("======RESULTADOS======");
         for (int i = 0; i < asignaturas.Count; i++)
         {
-            System.Console.WriteLine("En " + asignaturas[i] +" has sacado " + notas[i]);
+            System.Console.WriteLine("En " + asignaturas[i] + " has sacado " + notas[i]);
         }
     }
+    
+    //EJERCICIO 5: verificar las asignaturas reprobadas usando las notas ya ingresadas
+    public void Mostrar_Asignaturas_Reprobadas()
+    {
+        
+
+    }          
 
 }
 
