@@ -80,6 +80,23 @@ public class Loteria
         //usamos una lista  para almacenar los números ganadores
         System.Collections.Generic.List<int> awarded = new System.Collections.Generic.List<int>();
 
+        //pedimos al usuario que ingrese 6 numeros validos
+        while (awarded.Count < 6)
+        {
+            System.Console.Write("Introduce un numero ganador: ");
+            string input = System.Console.ReadLine();
+
+            //convertir la entrada a entero
+            if (int.TryParse(input, out int number))
+            {
+                awarded.Add(number);
+            }
+            else
+            {
+                System.Console.WriteLine("Entrada invalida. Por favor introduce un numero valido.");
+            }
+        }
+
         
     }
 
