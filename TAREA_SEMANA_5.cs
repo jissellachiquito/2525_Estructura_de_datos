@@ -70,6 +70,15 @@ class Curso
     //EJERCICIO 5: verificar las asignaturas reprobadas usando las notas ya ingresadas
     public void Mostrar_Asignaturas_Reprobadas()
     {
+        System.Console.WriteLine("====== ASIGNATURAS REPROBADAS ======");
+
+        // Verifica si ya se ingresaron notas
+        if (notas.Count != asignaturas.Count)
+        {
+            System.Console.WriteLine("Primero debes ingresar las notas");
+            return;
+        }
+
         
 
     }          
