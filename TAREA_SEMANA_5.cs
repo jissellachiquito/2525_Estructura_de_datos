@@ -97,7 +97,10 @@ public class Loteria
             }
         }
 
-        
+        //ordenar la lista de menor a mayor
+        awarded.Sort();
+
+       
     }
 
 }
