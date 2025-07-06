@@ -24,5 +24,24 @@ public class ListaEnlazada
         cabeza = null;
     }
 
+    //metodo para agregarlos datos al final 
+    public void AgregarAlFinal(int dato)
+    {
+        Nodo nuevo = new Nodo(dato);
+        if (cabeza == null)
+        {
+            cabeza = nuevo;
+        }
+        else
+        {
+            Nodo actual = cabeza;
+            while (actual.siguiente != null)
+            {
+                actual = actual.siguiente;
+            }
+            actual.siguiente = nuevo;
+        }
+    }
+
     
 }
