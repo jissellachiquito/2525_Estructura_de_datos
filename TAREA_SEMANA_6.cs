@@ -55,5 +55,8 @@ public class ListaEnlazada
         Console.WriteLine("null");
     }
 
-    
+    //metodo para invertir la lista
+    public void Invertir()
+    {
+        
 }
