@@ -14,3 +14,15 @@ public class Nodo
     }
 }
 
+//lista enlazada 
+public class ListaEnlazada
+{
+    private Nodo cabeza; //primer nodo de la lista
+
+    public ListaEnlazada()
+    {
+        cabeza = null;
+    }
+
+    
+}
