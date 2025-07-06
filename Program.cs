@@ -2,7 +2,20 @@
 {
     static void Main(string[] args)
     {
+        ListaEnlazada lista = new ListaEnlazada();
 
+        //agregar algunos datos
+        lista.AgregarAlFinal(15);
+        lista.AgregarAlFinal(28);
+        lista.AgregarAlFinal(33);
+        lista.AgregarAlFinal(49);
+        lista.AgregarAlFinal(55);
+        lista.AgregarAlFinal(100);
+
+        Console.WriteLine("Lista original:");
+        lista.Mostrar();
+
+        
     }
 }
 
