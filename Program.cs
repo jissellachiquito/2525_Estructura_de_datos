@@ -1,4 +1,11 @@
-﻿
+﻿class Programa_principal
+{
+    static void Main(string[] args)
+    {
+
+    }
+}
+
 
 
 
