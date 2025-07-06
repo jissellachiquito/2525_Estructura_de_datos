@@ -1,5 +1,5 @@
 //ejercicios de listas enlazadas 
-//EJERCICIO 1
+//EJERCICIO 1:INVERTIR UNA LISTA ENLAZADA
 
 //nodo de la lista
 public class Nodo
