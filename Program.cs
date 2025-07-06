@@ -1,43 +1,51 @@
 ﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //clase para imprimir el programa de los ejercicios/(tarea 5) 
-class Programa 
-{
-    private static void Main()
-    {
-        System.Console.WriteLine("      LISTA DE ASIGNATURAS     ");
-        System.Console.WriteLine("===============================");
+// class Programa 
+// {
+//     private static void Main()
+//     {
+//         System.Console.WriteLine("      LISTA DE ASIGNATURAS     ");
+//         System.Console.WriteLine("===============================");
 
-        Curso curso = new Curso();
-        curso.Mostrar_Asignaturas();       //Ejercicio 1
-        curso.Mostrar_Frase_Estudio();    //Ejercicio 2
-        curso.Pedir_Notas_Y_Mostrar_Resultados();    //Ejercicio 3
-        curso.Mostrar_Asignaturas_Reprobadas();  //Ejercicio 5
+//         Curso curso = new Curso();
+//         curso.Mostrar_Asignaturas();       //Ejercicio 1
+//         curso.Mostrar_Frase_Estudio();    //Ejercicio 2
+//         curso.Pedir_Notas_Y_Mostrar_Resultados();    //Ejercicio 3
+//         curso.Mostrar_Asignaturas_Reprobadas();  //Ejercicio 5
 
-        Loteria ganadores = new Loteria();   // Ejercicio 4
-        ganadores.Ejecutar();     
+//         Loteria ganadores = new Loteria();   // Ejercicio 4
+//         ganadores.Ejecutar();     
         
 
 
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     }
+// }
 
 
 
