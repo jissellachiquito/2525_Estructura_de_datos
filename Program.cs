@@ -12,13 +12,13 @@
         lista.AgregarAlFinal(55);
         lista.AgregarAlFinal(100);
 
-        Console.WriteLine("Lista original:");
+        Console.WriteLine("LISTA ORIGINAL:");
         lista.Mostrar();
 
         //invertir la lista
         lista.Invertir();
 
-        Console.WriteLine("Lista invertida:");
+        Console.WriteLine("LISTA INVERTIDA:");
         lista.Mostrar();
     }
 }
