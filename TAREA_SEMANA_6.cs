@@ -58,5 +58,18 @@ public class ListaEnlazada
     //metodo para invertir la lista
     public void Invertir()
     {
-        
+        Nodo anterior = null;
+        Nodo actual = cabeza;
+        Nodo siguiente = null;
+
+        while (actual != null)
+        {
+            siguiente = actual.siguiente;  //guardar el siguiente nodo
+            actual.siguiente = anterior;   //invertir el puntero
+            anterior = actual;             //avanzar el anterior
+            actual = siguiente;            //avanzar el actual
+        }
+
+        cabeza = anterior;  //cambiar la cabeza al ultimo nodo
+    }
 }
