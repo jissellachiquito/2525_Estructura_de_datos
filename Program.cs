@@ -15,7 +15,11 @@
         Console.WriteLine("Lista original:");
         lista.Mostrar();
 
-        
+        //invertir la lista
+        lista.Invertir();
+
+        Console.WriteLine("Lista invertida:");
+        lista.Mostrar();
     }
 }
 
