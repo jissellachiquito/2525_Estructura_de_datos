@@ -43,5 +43,17 @@ public class ListaEnlazada
         }
     }
 
+    //metodo para imprimir la lista
+    public void Mostrar()
+    {
+        Nodo actual = cabeza;
+        while (actual != null)
+        {
+            Console.Write(actual.dato + " -> ");
+            actual = actual.siguiente;
+        }
+        Console.WriteLine("null");
+    }
+
     
 }
