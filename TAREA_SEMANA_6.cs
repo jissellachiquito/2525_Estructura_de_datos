@@ -1,1 +1,1 @@
-//ejercicios 
+//ejercicios de listas enlazadas 
