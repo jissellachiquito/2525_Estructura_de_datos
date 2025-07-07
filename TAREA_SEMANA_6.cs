@@ -101,7 +101,14 @@ public class ListaEnlazada
         while (actual != null && actual.siguiente != null)
         {
             
-        
+        if (actual.siguiente.dato < minimo || actual.siguiente.dato > maximo)
+            {
+                actual.siguiente = actual.siguiente.siguiente;
+            }
+            else
+            {
+                actual = actual.siguiente;
+            }
         }
     }
     
