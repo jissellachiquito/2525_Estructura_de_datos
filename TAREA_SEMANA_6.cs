@@ -96,9 +96,13 @@ public class ListaEnlazada
             cabeza = cabeza.siguiente;
         }
 
-    
-
-
-
+    //eliminar nodos en el resto de la lista
+        Nodo actual = cabeza;
+        while (actual != null && actual.siguiente != null)
+        {
+            
+        
+        }
+    }
     
 }
