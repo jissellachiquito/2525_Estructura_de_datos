@@ -90,7 +90,13 @@ public class ListaEnlazada
     public void EliminarFueraDeRango(int minimo, int maximo)
     {
         
+    //eliminar nodos al inicio si no cumplen
+        while (cabeza != null && (cabeza.dato < minimo || cabeza.dato > maximo))
+        {
+            cabeza = cabeza.siguiente;
+        }
 
+    
 
 
 
