@@ -20,7 +20,14 @@
 
         Console.WriteLine("LISTA INVERTIDA:");
         lista.Mostrar();
-    }
+    
+    
+    }    
+    
+
+
+
+    
 }
 
 

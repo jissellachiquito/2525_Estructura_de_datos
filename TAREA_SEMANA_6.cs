@@ -72,4 +72,12 @@ public class ListaEnlazada
 
         cabeza = anterior;  //cambiar la cabeza al ultimo nodo
     }
+
+
+   
+    // EJERCICIO 2: generar 50 números aleatorios entre 1 y 999
+    
+
+
+    
 }
