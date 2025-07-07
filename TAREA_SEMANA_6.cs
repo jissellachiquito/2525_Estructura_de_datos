@@ -78,7 +78,12 @@ public class ListaEnlazada
     // EJERCICIO 2:GENERAR 50 NUMEROS ALEATORIOS ENTRE 1 Y 999
     public void GenerarAleatorios()
     {
-        
+        Random rand = new Random();
+        for (int i = 0; i < 50; i++)
+        {
+            int numero = rand.Next(1, 1000); //genera numero entre 1 y 999
+            AgregarAlFinal(numero);
+        }
     }
     
     
