@@ -75,7 +75,12 @@ public class ListaEnlazada
 
 
    
-    // EJERCICIO 2: generar 50 números aleatorios entre 1 y 999
+    // EJERCICIO 2:GENERAR 50 NUMEROS ALEATORIOS ENTRE 1 Y 999
+    public void GenerarAleatorios()
+    {
+        
+    }
+    
     
 
 
