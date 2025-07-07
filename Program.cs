@@ -1,7 +1,9 @@
 ﻿class Programa_principal
 {
     static void Main(string[] args)
+
     {
+        //EJERCICIO 1:
         ListaEnlazada lista = new ListaEnlazada();
 
         //agregar algunos datos
@@ -22,6 +24,16 @@
         lista.Mostrar();
     
     
+        
+        // EJERCICIO 2:  
+        
+        Console.WriteLine("\n\nEJERCICIO 2: Lista aleatoria con 50 numeros (1 a 999)");
+
+        // Crear una nueva lista para este ejercicio
+        ListaEnlazada listaAleatoria = new ListaEnlazada();
+        listaAleatoria.GenerarAleatorios();
+
+        
     }    
     
 
