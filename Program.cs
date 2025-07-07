@@ -33,7 +33,19 @@
         ListaEnlazada listaAleatoria = new ListaEnlazada();
         listaAleatoria.GenerarAleatorios();
 
-        
+        Console.WriteLine("LISTA GENERADA:");
+        listaAleatoria.Mostrar();
+
+        Console.Write("Ingrese el valor minimo del rango: ");//solicitar al usuario que ingrese el valor minimo del rango
+        int minimo = int.Parse(Console.ReadLine());
+
+        Console.Write("Ingrese el valor maximo del rango: ");//solicitar al usuario que ingrese el valor maximo del rango
+        int maximo = int.Parse(Console.ReadLine());
+
+        listaAleatoria.EliminarFueraDeRango(minimo, maximo);//eliminar de la lista todos los elementos que esten fuera del rango 
+
+        Console.WriteLine("LISTA DESPUES DE ELIMINAR ELEMENTOS FUERA DEL RANGO:");
+        listaAleatoria.Mostrar();
     }    
     
 
