@@ -86,7 +86,12 @@ public class ListaEnlazada
         }
     }
     
-    
+    //elimina los nodos que esten fuera del rango (minimo, maximo)
+    public void EliminarFueraDeRango(int minimo, int maximo)
+    {
+        
+
+
 
 
     
