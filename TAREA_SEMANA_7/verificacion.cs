@@ -4,7 +4,7 @@ class StackChar
     private char[] elementos; //arreglo para almacenar elementos 
     private int tope;         //indice del tope de la pila
 
-    //constructor que inicializa la pila con un tamaño dado
+//constructor que inicializa la pila con un tamaño dado
     public StackChar(int tamaño)
     {
         elementos = new char[tamaño];
@@ -18,7 +18,15 @@ class StackChar
             elementos[++tope] = valor;
     }
 
+    //metodo pop que saca el ultimo caracter de la pila
+    public char Pop()
+    {
+        if (tope >= 0)
+            return elementos[tope--];
+        return '\0';  //retorna caracter nulo si la pila esta vacia
+    }
 
+   
 }
 
 
