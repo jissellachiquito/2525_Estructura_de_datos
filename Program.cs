@@ -27,7 +27,7 @@
 
 
 
-//SEMNA 6
+//SEMANA 6
 
 // class Programa_principal
 // {
