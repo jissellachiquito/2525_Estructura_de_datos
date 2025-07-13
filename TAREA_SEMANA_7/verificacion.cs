@@ -40,6 +40,17 @@ class Verificador
     //metodo que verifica si los simbolos de la expresion matematica estan balanceados
     public static string Verificar(string expresion)
     {
+        //se crea una pila con capacidad igual al largo de la expresion para almacenar los simbolos
+        StackChar pila = new StackChar(expresion.Length);
+
+        //se recorre cada caracter de la expresion
+        for (int i = 0; i < expresion.Length; i++)
+        {
+            char c = expresion[i];
+
+            
+        }
+
         
     }
 }
