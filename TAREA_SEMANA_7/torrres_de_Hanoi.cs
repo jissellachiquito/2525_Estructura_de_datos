@@ -71,11 +71,15 @@ class Hanoi
         Pila torre_B = new Pila("B", n);
         Pila torre_C = new Pila("C", n);
 
+        //se carga los discos en la torre A (de mayor a menor) 
+        for (int i = n; i >= 1; i--)
+            torre_A.Push(i);
 
+        
     }
 
 
-    
+   
 }
 
 
