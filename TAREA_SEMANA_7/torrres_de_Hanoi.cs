@@ -20,7 +20,15 @@ class Pila
             discos[++tope] = disco;
     }
 
-    
+    //metodo pop para retirar el disco superior de la torre
+    public int Pop()
+    {
+        if (tope >= 0)
+            return discos[tope--];
+        return -1;
+    }
+
+   
 }
 
 
