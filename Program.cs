@@ -12,7 +12,7 @@
         System.Console.WriteLine();
         
         //muestra como resolver las Torres de Hanoi paso a paso
-        System.Console.WriteLine("RESOLUCION DE TORRES DE HANOI:");
+        System.Console.WriteLine("RESOLUCION DE TORRES DE HANOI:  ");
         Hanoi.Ejecutar();
 
        
