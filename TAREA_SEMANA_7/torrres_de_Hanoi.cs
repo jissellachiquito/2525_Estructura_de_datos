@@ -13,6 +13,13 @@ class Pila
         tope = -1;
     }
 
+    //metodo push que coloca un disco sobre la torre
+    public void Push(int disco)
+    {
+        if (tope < discos.Length - 1)
+            discos[++tope] = disco;
+    }
+
     
 }
 
