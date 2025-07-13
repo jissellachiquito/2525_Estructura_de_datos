@@ -44,8 +44,24 @@ class Hanoi
     //metodo para resolver Hanoi
     public static void Resolver(int n, Pila origen, Pila auxiliar, Pila destino)
     {
-        
+        if (n == 1)
+        {
+            //mover un solo disco directamente
+            origen.MoverDisco(destino);
+        }
+        else
+        {
+            //paso 1: mover n-1 discos a la torre auxiliar
+            Resolver(n - 1, origen, destino, auxiliar);
+
+            //paso 2: mover el disco más grande al destino
+            origen.MoverDisco(destino);
+
+            //paso 3: mover los n-1 discos desde auxiliar a destino
+            Resolver(n - 1, auxiliar, origen, destino);
+        }
     }
+    
 
     
 }
