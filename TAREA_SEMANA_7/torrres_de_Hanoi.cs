@@ -61,7 +61,14 @@ class Hanoi
             Resolver(n - 1, auxiliar, origen, destino);
         }
     }
-    
+
+
+    //metodo para inicializar las torres y comenzar el proceso
+    public static void Ejecutar()
+    {
+       
+    }
+
 
     
 }
