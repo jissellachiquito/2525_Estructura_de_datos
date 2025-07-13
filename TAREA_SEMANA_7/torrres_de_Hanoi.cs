@@ -41,6 +41,12 @@ class Pila
 //Creacion de clase Hanoi para resolver el problema
 class Hanoi
 {
+    //metodo para resolver Hanoi
+    public static void Resolver(int n, Pila origen, Pila auxiliar, Pila destino)
+    {
+        
+    }
+
     
 }
 
