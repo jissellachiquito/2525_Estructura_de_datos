@@ -71,8 +71,8 @@ class Verificador
 
         }
 
-        //si al finalizar de recorrer toda la expresión la pila está vacía, la fórmula está correctamente balanceada.
-        return pila.EstaVacia() ? "FORMULA BALANCEDA" : "FORMULA NO BALANCEADA";//si es falsa devuelve lo contrario
+        //si al finalizar de recorrer toda la expresion la pila esta vacia, la formula esta correctamente balanceada.
+        return pila.EstaVacia() ? "FORMULA BALANCEDA" : "FORMULA NO BALANCEADA";//si es falso devuelve lo contrario
     
     }
 }
