@@ -48,10 +48,10 @@ class Verificador
         {
             char c = expresion[i];
 
-             //si es un simbolo de apertura, se agrega a la pila
+            //si es un simbolo de apertura, se agrega a la pila
             if (c == '(' || c == '{' || c == '[')
                 pila.Push(c);
-                
+
             //si es simbolo de cierre, se verfica el tope de la pila
             else if (c == ')' || c == '}' || c == ']')
             {
@@ -69,7 +69,11 @@ class Verificador
 
             }
 
-        
+        }
+
+        //si al finalizar de recorrer toda la expresión la pila está vacía, la fórmula está correctamente balanceada.
+        return pila.EstaVacia() ? "FORMULA BALANCEDA" : "FORMULA NO BALANCEADA";//si es falsa devuelve lo contrario
+    
     }
 }
 
