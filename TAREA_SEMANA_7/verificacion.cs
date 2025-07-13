@@ -32,8 +32,12 @@ class StackChar
         return tope == -1;
     }
 
-   
 }
 
+//Creamos clase verificador para verificar si los simbolos estan balanceados
+class Verificador
+{
+    
+}
 
 
