@@ -1,4 +1,4 @@
-// Clase pila que representa una torre con discos 
+//Creacion de clase pila que representa una torre con discos 
 class Pila
 {
     private int[] discos; //arreglo para representar los discos
@@ -35,6 +35,13 @@ class Pila
         destino.Push(disco);
         System.Console.WriteLine("Mover disco " + disco + " de " + Nombre + " a " + destino.Nombre);
     }
+}
+
+
+//Creacion de clase Hanoi para resolver el problema
+class Hanoi
+{
+    
 }
 
 
