@@ -66,7 +66,12 @@ class Hanoi
     //metodo para inicializar las torres y comenzar el proceso
     public static void Ejecutar()
     {
-       
+        int n = 3; //numero de discos
+        Pila torre_A = new Pila("A", n);
+        Pila torre_B = new Pila("B", n);
+        Pila torre_C = new Pila("C", n);
+
+
     }
 
 
