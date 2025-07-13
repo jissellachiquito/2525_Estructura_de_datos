@@ -37,7 +37,11 @@ class StackChar
 //Creamos clase verificador para verificar si los simbolos estan balanceados
 class Verificador
 {
-    
+    //metodo que verifica si los simbolos de la expresion matematica estan balanceados
+    public static string Verificar(string expresion)
+    {
+        
+    }
 }
 
 
