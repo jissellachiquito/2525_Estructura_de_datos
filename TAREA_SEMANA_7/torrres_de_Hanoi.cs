@@ -75,6 +75,9 @@ class Hanoi
         for (int i = n; i >= 1; i--)
             torre_A.Push(i);
 
+        //se llama al algoritmo para resolver Hanoi
+        Resolver(n, torre_A, torre_B, torre_C);
+
         
     }
 
