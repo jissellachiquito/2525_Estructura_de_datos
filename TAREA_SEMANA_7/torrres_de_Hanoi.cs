@@ -28,7 +28,13 @@ class Pila
         return -1;
     }
 
-   
+    //mover un disco de esta torre a otra torre
+    public void MoverDisco(Pila destino)
+    {
+        int disco = Pop();
+        destino.Push(disco);
+        System.Console.WriteLine("Mover disco " + disco + " de " + Nombre + " a " + destino.Nombre);
+    }
 }
 
 
