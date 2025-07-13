@@ -48,8 +48,26 @@ class Verificador
         {
             char c = expresion[i];
 
-            
-        }
+             //si es un simbolo de apertura, se agrega a la pila
+            if (c == '(' || c == '{' || c == '[')
+                pila.Push(c);
+                
+            //si es simbolo de cierre, se verfica el tope de la pila
+            else if (c == ')' || c == '}' || c == ']')
+            {
+                //dado caso si la pila esta vacia retorna "FORMULA NO BALANCEADA"
+                if (pila.EstaVacia()) return "FORMULA NO BALANCEADA.";
+
+                char tope = pila.Pop();
+
+                //verificamos si el simbolo de cierre corresponde al de apertura sino tambien retorna "FORMULA NO BALANCEADA"
+                if ((c == ')' && tope != '(') ||
+                    (c == '}' && tope != '{') ||
+                    (c == ']' && tope != '['))
+                    return "FORMULA NO BALANCEADA.";
+
+
+            }
 
         
     }
