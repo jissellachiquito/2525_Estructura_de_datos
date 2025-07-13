@@ -1,84 +1,84 @@
-﻿class Programa_principal
-{
-    static void Main(string[] args)
+﻿
 
-    {
-        //EJERCICIO 1:
-        ListaEnlazada lista = new ListaEnlazada();
 
-        //agregar algunos datos
-        lista.AgregarAlFinal(15);
-        lista.AgregarAlFinal(28);
-        lista.AgregarAlFinal(33);
-        lista.AgregarAlFinal(49);
-        lista.AgregarAlFinal(55);
-        lista.AgregarAlFinal(100);
 
-        Console.WriteLine("LISTA ORIGINAL:");
-        lista.Mostrar();
 
-        //invertir la lista
-        lista.Invertir();
 
-        Console.WriteLine("LISTA INVERTIDA:");
-        lista.Mostrar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SEMNA 6
+
+// class Programa_principal
+// {
+//     static void Main(string[] args)
+
+//     {
+//         //EJERCICIO 1:
+//         ListaEnlazada lista = new ListaEnlazada();
+
+//         //agregar algunos datos
+//         lista.AgregarAlFinal(15);
+//         lista.AgregarAlFinal(28);
+//         lista.AgregarAlFinal(33);
+//         lista.AgregarAlFinal(49);
+//         lista.AgregarAlFinal(55);
+//         lista.AgregarAlFinal(100);
+
+//         Console.WriteLine("LISTA ORIGINAL:");
+//         lista.Mostrar();
+
+//         //invertir la lista
+//         lista.Invertir();
+
+//         Console.WriteLine("LISTA INVERTIDA:");
+//         lista.Mostrar();
     
     
         
-        // EJERCICIO 2:  
+//         // EJERCICIO 2:  
         
-        Console.WriteLine("\n\nEJERCICIO 2: Lista aleatoria con 50 numeros (1 a 999)");
+//         Console.WriteLine("\n\nEJERCICIO 2: Lista aleatoria con 50 numeros (1 a 999)");
 
-        // Crear una nueva lista para este ejercicio
-        ListaEnlazada listaAleatoria = new ListaEnlazada();
-        listaAleatoria.GenerarAleatorios();
+//         // Crear una nueva lista para este ejercicio
+//         ListaEnlazada listaAleatoria = new ListaEnlazada();
+//         listaAleatoria.GenerarAleatorios();
 
-        Console.WriteLine("LISTA GENERADA:");
-        listaAleatoria.Mostrar();
+//         Console.WriteLine("LISTA GENERADA:");
+//         listaAleatoria.Mostrar();
 
-        Console.Write("Ingrese el valor minimo del rango: ");//solicitar al usuario que ingrese el valor minimo del rango
-        int minimo = int.Parse(Console.ReadLine());
+//         Console.Write("Ingrese el valor minimo del rango: ");//solicitar al usuario que ingrese el valor minimo del rango
+//         int minimo = int.Parse(Console.ReadLine());
 
-        Console.Write("Ingrese el valor maximo del rango: ");//solicitar al usuario que ingrese el valor maximo del rango
-        int maximo = int.Parse(Console.ReadLine());
+//         Console.Write("Ingrese el valor maximo del rango: ");//solicitar al usuario que ingrese el valor maximo del rango
+//         int maximo = int.Parse(Console.ReadLine());
 
-        listaAleatoria.EliminarFueraDeRango(minimo, maximo);//eliminar de la lista todos los elementos que esten fuera del rango 
+//         listaAleatoria.EliminarFueraDeRango(minimo, maximo);//eliminar de la lista todos los elementos que esten fuera del rango 
 
-        Console.WriteLine("LISTA DESPUES DE ELIMINAR ELEMENTOS FUERA DEL RANGO:");
-        listaAleatoria.Mostrar();
-    }    
-    
+//         Console.WriteLine("LISTA DESPUES DE ELIMINAR ELEMENTOS FUERA DEL RANGO:");
+//         listaAleatoria.Mostrar();
+//     }    
+      
+// }
 
-
-
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//SEMANA 5
 
 //clase para imprimir el programa de los ejercicios/(tarea 5) 
 // class Programa 
