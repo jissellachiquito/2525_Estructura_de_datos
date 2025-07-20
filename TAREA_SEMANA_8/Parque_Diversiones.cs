@@ -20,6 +20,7 @@ public class Parque_Diversiones
             return false;  //retorna false cuando ya no hay asientos disponibles
         }
 
+        asientos[cantidad_Ocupada] = nombrePersona; //se asigna el nombre 
        
     }
 
