@@ -28,7 +28,20 @@ public class Parque_Diversiones
     //metodo para mostrar todos los asientos ocupados
     public void Mostrar_Asientos()
     {
-        
+        if (cantidad_Ocupada == 0) //verifica si aun no se ha asignado ningun asiento
+        {
+            System.Console.WriteLine("TODOS ESTAN DISPONIBLES...");
+        }
+        else
+        {
+            //Si hay asientos ocupados, se muestra el listado 
+            System.Console.WriteLine("LISTADO DE PERSONAS CON ASIENTO ASIGNADO:");
+            for (int i = 0; i < cantidad_Ocupada; i++)
+            {
+                System.Console.WriteLine("Asiento {0}: {1}", i + 1, asientos[i]); //recorre todos los asientos ocupados 
+            }
+        }
     }
 
+   
 }
