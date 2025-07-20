@@ -11,6 +11,17 @@ public class Parque_Diversiones
         asientos = new string[totalAsientos];
         cantidad_Ocupada = 0; //no hay asientos ocupados
     }
+    
+    //metodo que asigna un asiento cuando si hay espacio disponible
+    public bool Asignar_Asiento(string nombrePersona)
+    {
+        if (cantidad_Ocupada >= asientos.Length)
+        {
+            return false;  //retorna false cuando ya no hay asientos disponibles
+        }
+
+       
+    }
 
     
 }
