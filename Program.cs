@@ -6,7 +6,26 @@
         Parque_Diversiones parque = new Parque_Diversiones(30);
         int opcion;
 
-        
+        do
+        {
+            //menu principal del sistema
+            System.Console.WriteLine("\n------ PARQUE DE DIVERSIONES ------");
+            System.Console.WriteLine("1. Registrar persona en la fila");
+            System.Console.WriteLine("2. Mostrar asientos ocupados");
+            System.Console.WriteLine("3. Consultar asientos disponibles");
+            System.Console.WriteLine("4. Salir");
+            System.Console.Write("Seleccione una opcion: ");
+            string entrada = System.Console.ReadLine();
+
+            if (!int.TryParse(entrada, out opcion))
+            {
+                System.Console.WriteLine("Entrada no valida. Intente nuevamente....");
+                continue;
+            }
+
+        }
+
+         
     }
 }
 
