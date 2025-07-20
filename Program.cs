@@ -47,6 +47,10 @@
                     }
                     break;
 
+                case 2:   //opcion para mostrar asientos ocupados
+                    parque.Mostrar_Asientos();
+                    break;
+
                 
             }
 
