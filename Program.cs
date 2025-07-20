@@ -25,6 +25,28 @@
 
             switch (opcion) //sirve para ejecutar la opcion seleccionada 
             {
+                case 1: //opcion para registrar una nueva persona
+                    if (parque.Esta_Lleno())
+                    {
+                        System.Console.WriteLine("Todos los asientos estan ocupados....");
+                    }
+                    else
+                    {
+                        System.Console.Write("Ingrese el nombre de la persona: ");
+                        string nombre = System.Console.ReadLine();
+                        bool asignado = parque.Asignar_Asiento(nombre);   //intenta asignar un asiento
+
+                        if (asignado)    //muestra mensaje segun sea el resultado
+                        {
+                            System.Console.WriteLine("Asiento asignado correctamente.");//cuando hay asientos
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("No fue posible asignar el asiento.");//cuando no hay asientos
+                        }
+                    }
+                    break;
+
                 
             }
 
