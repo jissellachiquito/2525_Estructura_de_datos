@@ -23,9 +23,12 @@
                 continue;
             }
 
-        }
+            switch (opcion) //sirve para ejecutar la opcion seleccionada 
+            {
+                
+            }
 
-         
+        } 
     }
 }
 
