@@ -60,8 +60,8 @@
                     System.Console.WriteLine("Gracias por preferirnos. ¡Hasta pronto!.....");
                     break;
 
-                default:  //cuando la opción sea invalida
-                    System.Console.WriteLine("Opción invalida. Intente nuevamente.");
+                default:  //cuando la opcion sea invalida
+                    System.Console.WriteLine("Opcion invalida. Intente nuevamente.");
                     break;
             }
 
