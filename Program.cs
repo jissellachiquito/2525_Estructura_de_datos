@@ -1,23 +1,4 @@
-﻿class Programa_principal
-{
-    static void Main()
-    {
-        //ingreso de la expresion por consola 
-        System.Console.WriteLine("INGRESE UNA EXPRESION MATEMATICA:");
-        string expresion = System.Console.ReadLine();
-
-        //verificacion de parentesis
-        string resultado = Verificador.Verificar(expresion);
-        System.Console.WriteLine("RESULTADO DE VERIFICACION : " + resultado);
-        System.Console.WriteLine();
-        
-        //muestra como resolver las Torres de Hanoi paso a paso
-        System.Console.WriteLine("RESOLUCION DE TORRES DE HANOI:  ");
-        Hanoi.Ejecutar();
-
-       
-    }
-}
+﻿
 
 
 
@@ -42,6 +23,39 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// //SEMANA 7
+// class Programa_principal
+// {
+//     static void Main()
+//     {
+//         //ingreso de la expresion por consola 
+//         System.Console.WriteLine("INGRESE UNA EXPRESION MATEMATICA:");
+//         string expresion = System.Console.ReadLine();
+
+//         //verificacion de parentesis
+//         string resultado = Verificador.Verificar(expresion);
+//         System.Console.WriteLine("RESULTADO DE VERIFICACION : " + resultado);
+//         System.Console.WriteLine();
+
+//         //muestra como resolver las Torres de Hanoi paso a paso
+//         System.Console.WriteLine("RESOLUCION DE TORRES DE HANOI:  ");
+//         Hanoi.Ejecutar();
+
+
+//     }
+// }
 
 
 
