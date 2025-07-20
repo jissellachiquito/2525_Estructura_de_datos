@@ -56,10 +56,16 @@
                     System.Console.WriteLine("Asientos disponibles: {0}", disponibles);
                     break;
 
-                
+                case 4:   //opcion para salir del sistema con mensaje final
+                    System.Console.WriteLine("Gracias por preferirnos. ¡Hasta pronto!.....");
+                    break;
+
+                default:  //cuando la opción sea invalida
+                    System.Console.WriteLine("Opción invalida. Intente nuevamente.");
+                    break;
             }
 
-        } 
+        } while (opcion != 4); //el bucle se repite hasta que el usuario elija salir
     }
 }
 
