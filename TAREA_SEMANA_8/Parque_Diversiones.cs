@@ -3,5 +3,7 @@
 public class ParqueDiversiones
 {
     private string[] asientos;//array que almacena los nombres de las personas que ocuparon un asiento
+    private int cantidad_Ocupada;//contador para llevar la cantidad de asientos ocupados
+
     
 }
