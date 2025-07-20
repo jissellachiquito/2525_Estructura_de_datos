@@ -1,6 +1,13 @@
 ﻿class Programa_principal
 {
-    
+    static void Main()
+    {
+        //se crea una instancia del sistema con 30 asientos disponibles
+        Parque_Diversiones parque = new Parque_Diversiones(30);
+        int opcion;
+
+        
+    }
 }
 
 
