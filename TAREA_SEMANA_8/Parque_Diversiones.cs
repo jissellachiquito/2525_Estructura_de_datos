@@ -21,7 +21,8 @@ public class Parque_Diversiones
         }
 
         asientos[cantidad_Ocupada] = nombrePersona; //se asigna el nombre 
-       
+        cantidad_Ocupada++; //incrementa el contador de asientos ocupados
+        return true; //retorna true cuando ya que se asigno un asiento
     }
 
     
