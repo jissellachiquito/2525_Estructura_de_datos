@@ -51,6 +51,11 @@
                     parque.Mostrar_Asientos();
                     break;
 
+                case 3:   //opcion para consultar cuantos asientos quedan libres
+                    int disponibles = parque.Espacios_Disponibles();
+                    System.Console.WriteLine("Asientos disponibles: {0}", disponibles);
+                    break;
+
                 
             }
 
