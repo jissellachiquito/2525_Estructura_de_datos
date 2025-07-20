@@ -25,5 +25,10 @@ public class Parque_Diversiones
         return true; //retorna true cuando ya que se asigno un asiento
     }
 
-    
+    //metodo para mostrar todos los asientos ocupados
+    public void Mostrar_Asientos()
+    {
+        
+    }
+
 }
