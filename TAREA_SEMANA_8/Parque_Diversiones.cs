@@ -50,5 +50,9 @@ public class Parque_Diversiones
     }
 
 
-   
+    //metodo para verficar si todos los asientos han sido ocupados
+    public bool Esta_Lleno()
+    {
+        return cantidad_Ocupada == asientos.Length;
+    }
 }
