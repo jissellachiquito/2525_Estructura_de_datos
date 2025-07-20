@@ -43,5 +43,12 @@ public class Parque_Diversiones
         }
     }
 
+    //metodo para mostrar la cantidad de asientos disponibles
+    public int Espacios_Disponibles()
+    {
+        return asientos.Length - cantidad_Ocupada;
+    }
+
+
    
 }
