@@ -1,73 +1,4 @@
-﻿class Programa_principal
-{
-    static void Main()
-    {
-        //se crea una instancia del sistema con 30 asientos disponibles
-        Parque_Diversiones parque = new Parque_Diversiones(30);
-        int opcion;
-
-        do
-        {
-            //menu principal del sistema
-            System.Console.WriteLine("\n------ PARQUE DE DIVERSIONES ------");
-            System.Console.WriteLine("1. Registrar persona en la fila");
-            System.Console.WriteLine("2. Mostrar asientos ocupados");
-            System.Console.WriteLine("3. Consultar asientos disponibles");
-            System.Console.WriteLine("4. Salir");
-            System.Console.Write("Seleccione una opcion: ");
-            string entrada = System.Console.ReadLine();
-
-            if (!int.TryParse(entrada, out opcion))
-            {
-                System.Console.WriteLine("Entrada no valida. Intente nuevamente....");
-                continue;
-            }
-
-            switch (opcion) //sirve para ejecutar la opcion seleccionada 
-            {
-                case 1: //opcion para registrar una nueva persona
-                    if (parque.Esta_Lleno())
-                    {
-                        System.Console.WriteLine("Todos los asientos estan ocupados....");
-                    }
-                    else
-                    {
-                        System.Console.Write("Ingrese el nombre de la persona: ");
-                        string nombre = System.Console.ReadLine();
-                        bool asignado = parque.Asignar_Asiento(nombre);   //intenta asignar un asiento
-
-                        if (asignado)    //muestra mensaje segun sea el resultado
-                        {
-                            System.Console.WriteLine("Asiento asignado correctamente.");//cuando hay asientos
-                        }
-                        else
-                        {
-                            System.Console.WriteLine("No fue posible asignar el asiento.");//cuando no hay asientos
-                        }
-                    }
-                    break;
-
-                case 2:   //opcion para mostrar asientos ocupados
-                    parque.Mostrar_Asientos();
-                    break;
-
-                case 3:   //opcion para consultar cuantos asientos quedan libres
-                    int disponibles = parque.Espacios_Disponibles();
-                    System.Console.WriteLine("Asientos disponibles: {0}", disponibles);
-                    break;
-
-                case 4:   //opcion para salir del sistema con mensaje final
-                    System.Console.WriteLine("Gracias por preferirnos. ¡Hasta pronto!.....");
-                    break;
-
-                default:  //cuando la opcion sea invalida
-                    System.Console.WriteLine("Opcion invalida. Intente nuevamente.");
-                    break;
-            }
-
-        } while (opcion != 4); //el bucle se repite hasta que el usuario elija salir
-    }
-}
+﻿
 
 
 
@@ -94,14 +25,78 @@
 
 
 
+//SEMANA 8
 
+// class Programa_principal
+// {
+//     static void Main()
+//     {
+//         //se crea una instancia del sistema con 30 asientos disponibles
+//         Parque_Diversiones parque = new Parque_Diversiones(30);
+//         int opcion;
 
+//         do
+//         {
+//             //menu principal del sistema
+//             System.Console.WriteLine("\n------ PARQUE DE DIVERSIONES ------");
+//             System.Console.WriteLine("1. Registrar persona en la fila");
+//             System.Console.WriteLine("2. Mostrar asientos ocupados");
+//             System.Console.WriteLine("3. Consultar asientos disponibles");
+//             System.Console.WriteLine("4. Salir");
+//             System.Console.Write("Seleccione una opcion: ");
+//             string entrada = System.Console.ReadLine();
 
+//             if (!int.TryParse(entrada, out opcion))
+//             {
+//                 System.Console.WriteLine("Entrada no valida. Intente nuevamente....");
+//                 continue;
+//             }
 
+//             switch (opcion) //sirve para ejecutar la opcion seleccionada 
+//             {
+//                 case 1: //opcion para registrar una nueva persona
+//                     if (parque.Esta_Lleno())
+//                     {
+//                         System.Console.WriteLine("Todos los asientos estan ocupados....");
+//                     }
+//                     else
+//                     {
+//                         System.Console.Write("Ingrese el nombre de la persona: ");
+//                         string nombre = System.Console.ReadLine();
+//                         bool asignado = parque.Asignar_Asiento(nombre);   //intenta asignar un asiento
 
+//                         if (asignado)    //muestra mensaje segun sea el resultado
+//                         {
+//                             System.Console.WriteLine("Asiento asignado correctamente.");//cuando hay asientos
+//                         }
+//                         else
+//                         {
+//                             System.Console.WriteLine("No fue posible asignar el asiento.");//cuando no hay asientos
+//                         }
+//                     }
+//                     break;
 
+//                 case 2:   //opcion para mostrar asientos ocupados
+//                     parque.Mostrar_Asientos();
+//                     break;
 
+//                 case 3:   //opcion para consultar cuantos asientos quedan libres
+//                     int disponibles = parque.Espacios_Disponibles();
+//                     System.Console.WriteLine("Asientos disponibles: {0}", disponibles);
+//                     break;
 
+//                 case 4:   //opcion para salir del sistema con mensaje final
+//                     System.Console.WriteLine("Gracias por preferirnos. ¡Hasta pronto!.....");
+//                     break;
+
+//                 default:  //cuando la opcion sea invalida
+//                     System.Console.WriteLine("Opcion invalida. Intente nuevamente.");
+//                     break;
+//             }
+
+//         } while (opcion != 4); //el bucle se repite hasta que el usuario elija salir
+//     }
+// }
 
 
 // //SEMANA 7
