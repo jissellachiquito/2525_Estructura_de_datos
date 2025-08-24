@@ -56,7 +56,11 @@ public class Vacunas
         var soloAstra = new System.Collections.Generic.HashSet<string>(astrazeneca);
         soloAstra.ExceptWith(pfizer);//elimina y solo se queda con los de astrazeneca
 
-
+        //mostrar resultados
+        ImprimirGrupo("1. NO VACUNADOS", noVacunados);
+        ImprimirGrupo("2. CON AMBAS DOSIS", ambasDosis);
+        ImprimirGrupo("3. SOLO PFIZER", soloPfizer);
+        ImprimirGrupo("4. SOLO ASTRAZENECA", soloAstra);
     }
 
     
