@@ -25,6 +25,16 @@ public class Vacunas
         GenerarVacunados(astrazeneca, 75);
     }
 
+    //se genera  la cantidad ciudadanos vacunados con nombres
+    private void GenerarVacunados(System.Collections.Generic.HashSet<string> conjunto, int cantidad)
+    {
+        System.Random random = new System.Random();
+        while (conjunto.Count < cantidad)
+        {
+            int id = random.Next(1, 501); // entre 1 y 500
+            conjunto.Add("Ciudadano " + id);
+        }
+    }
 
 
 }
