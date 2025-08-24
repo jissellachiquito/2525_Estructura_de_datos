@@ -18,7 +18,14 @@ public class Vacunas
             ciudadanos.Add("Ciudadano " + i);
         }
 
+        //75 vacunados con pfizer
+        GenerarVacunados(pfizer, 75);
 
+        //75 vacunados con astrazeneca
+        GenerarVacunados(astrazeneca, 75);
     }
+
+
+
 }
 
