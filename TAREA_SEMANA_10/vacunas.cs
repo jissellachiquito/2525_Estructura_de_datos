@@ -7,9 +7,9 @@ public class Vacunas
     public Vacunas()
     {
         //se inicializa colecciones para almacenar ciudadanos vacunados sin duplicados
-        ciudadanos = new System.Collections.Generic.HashSet<string>();
-        pfizer = new System.Collections.Generic.HashSet<string>();
-        astrazeneca = new System.Collections.Generic.HashSet<string>();
+        ciudadanos = new System.Collections.Generic.HashSet<string>(); //ciudadanos vacunados 
+        pfizer = new System.Collections.Generic.HashSet<string>(); //vacunados con pfizer
+        astrazeneca = new System.Collections.Generic.HashSet<string>(); //vacunados con astrazeneca
 
 
     }
