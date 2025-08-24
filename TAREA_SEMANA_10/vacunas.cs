@@ -39,7 +39,12 @@ public class Vacunas
     //se procesa los datos
     public void ProcesarDatos()
     {
- 
+        //no vacunados
+        var noVacunados = new System.Collections.Generic.HashSet<string>(ciudadanos);//se crea conjunto de no vacunados 
+        noVacunados.ExceptWith(pfizer);//se elimina del conjunto los que fueron vacunados con pfizer
+        noVacunados.ExceptWith(astrazeneca);//se elimina tambien los vacunados con aztrazeneca 
+
+
     }
 
     
