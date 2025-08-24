@@ -24,7 +24,7 @@ public class Vacunas
         //75 vacunados con astrazeneca
         GenerarVacunados(astrazeneca, 75);
     }
-
+    
     //se genera  la cantidad ciudadanos vacunados con nombres
     private void GenerarVacunados(System.Collections.Generic.HashSet<string> conjunto, int cantidad)
     {
@@ -36,6 +36,12 @@ public class Vacunas
         }
     }
 
+    //se procesa los datos
+    public void ProcesarDatos()
+    {
+ 
+    }
 
+    
 }
 
