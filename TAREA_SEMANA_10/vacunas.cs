@@ -42,7 +42,11 @@ public class Vacunas
         //no vacunados
         var noVacunados = new System.Collections.Generic.HashSet<string>(ciudadanos);//se crea conjunto de no vacunados 
         noVacunados.ExceptWith(pfizer);//se elimina del conjunto los que fueron vacunados con pfizer
-        noVacunados.ExceptWith(astrazeneca);//se elimina tambien los vacunados con aztrazeneca 
+        noVacunados.ExceptWith(astrazeneca);//se elimina tambien los vacunados con aztrazeneca
+
+        //ambas dosis 
+        var ambasDosis = new System.Collections.Generic.HashSet<string>(pfizer);
+        ambasDosis.IntersectWith(astrazeneca);//aplicamos la interseccion entre ambas vacunas
 
 
     }
