@@ -48,6 +48,14 @@ public class Vacunas
         var ambasDosis = new System.Collections.Generic.HashSet<string>(pfizer);
         ambasDosis.IntersectWith(astrazeneca);//aplicamos la interseccion entre ambas vacunas
 
+        //solo pfizer
+        var soloPfizer = new System.Collections.Generic.HashSet<string>(pfizer);
+        soloPfizer.ExceptWith(astrazeneca); //elimina y solo se queda con los de pfizer
+
+        //solo astrazeneca
+        var soloAstra = new System.Collections.Generic.HashSet<string>(astrazeneca);
+        soloAstra.ExceptWith(pfizer);//elimina y solo se queda con los de astrazeneca
+
 
     }
 
