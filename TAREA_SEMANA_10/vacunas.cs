@@ -15,7 +15,7 @@ public class Vacunas
         //se declara los 500 ciudadanos 
         for (int i = 1; i <= 500; i++)
         {
-            ciudadanos.Add("Ciudadano " + i);
+            ciudadanos.Add("ciudadano " + i);
         }
 
         //75 vacunados con pfizer
@@ -32,7 +32,7 @@ public class Vacunas
         while (conjunto.Count < cantidad)
         {
             int id = random.Next(1, 501); // entre 1 y 500
-            conjunto.Add("Ciudadano " + id);
+            conjunto.Add("ciudadano " + id);
         }
     }
 
@@ -62,7 +62,18 @@ public class Vacunas
         ImprimirGrupo("3. SOLO PFIZER", soloPfizer);
         ImprimirGrupo("4. SOLO ASTRAZENECA", soloAstra);
     }
+    //metodo que imprime cada grupo de personas con su contenido
+    private void ImprimirGrupo(string titulo, System.Collections.Generic.HashSet<string> grupo)
+    {
+        System.Console.WriteLine( titulo );//muestra el nonbre del grupo 
+        System.Console.WriteLine("Total: " + grupo.Count); //muestra el numero total de personas en ese grupo
 
+        foreach (var persona in grupo)//recorre cada persona en el grupo
+        {
+            System.Console.WriteLine(persona);//muestra el nombre de cada persona
+        }
+    }
+    
     
 }
 
