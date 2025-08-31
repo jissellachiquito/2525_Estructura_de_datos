@@ -2,12 +2,12 @@
 class Traductor
 
 {
-    //diccionario que almacena calve: español y valor: ingles 
-    private System.Collections.Generic.Dictionary<string, string> diccionario;
+    //diccionario que almacena clave: español y valor: ingles 
+    Dictionary<string, string> diccionario;
 
     public Traductor() // constructor de la clase traductor que crea el diccionario
     {
-        diccionario = new System.Collections.Generic.Dictionary<string, string>();
+        diccionario = new Dictionary<string, string>();
         Inicializar();
     }
 
@@ -50,11 +50,11 @@ class Traductor
         if (!diccionario.ContainsKey(espanol.ToLower()))//verifica si la palabra en español no existe aun en el diccionario
         {
             diccionario.Add(espanol.ToLower(), ingles.ToLower());//agrega la palabra en español como clave y la traduccion en ingles como valor
-            System.Console.WriteLine("Palabra agregada correctamente.");//muestra que la palabra se agrego correctamente
+            System.Console.WriteLine("Palabra agregada correctamente.....");//muestra que la palabra se agrego correctamente
         }
         else
         {
-            System.Console.WriteLine("La palabra ya existe en el diccionario.");//si la palabra ya existe, muestra que no se puede agregar 
+            System.Console.WriteLine("La palabra ya existe en el diccionario.....");//si la palabra ya existe, muestra que no se puede agregar 
         }
     }
 }
