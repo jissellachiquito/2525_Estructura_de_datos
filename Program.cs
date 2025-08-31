@@ -35,7 +35,16 @@
                 string ing = System.Console.ReadLine();
                 traductor.AgregarPalabra(esp, ing);  //agrega la palabra al diccionario
             }
-            
+            //opcion 3 para sali del programa
+            else if (opcion == 3)
+            {
+                System.Console.WriteLine("Saliendo del programa.....");
+            }
+            //en caso de cualquier otra opcion invalida
+            else
+            {
+                System.Console.WriteLine("Intente de nuevo,opcion invalida. ......");
+            }
         }
     }
 }
