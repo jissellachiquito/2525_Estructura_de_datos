@@ -1,11 +1,4 @@
-﻿public class Program
-{
-    public static void Main()
-    {
-        Vacunas v = new Vacunas();
-        v.ProcesarDatos();
-    }
-}
+﻿
 
 
 
@@ -29,6 +22,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SEMANA 10
+
+// public class Program
+// {
+//     public static void Main()
+//     {
+//         Vacunas v = new Vacunas();
+//         v.ProcesarDatos();
+//     }
+// }
 
 
 
