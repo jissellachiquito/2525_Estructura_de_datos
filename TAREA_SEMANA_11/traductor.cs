@@ -26,6 +26,24 @@ class Traductor
         diccionario.Add("ojo", "eye");
     }
 
+    //traduce una frase usando el diccionario
+    public string Traducir(string frase)
+    {
+        string[] palabras = frase.Split(' ');  //divide la frase en palabras usando el espacio como separador
+        for (int i = 0; i < palabras.Length; i++) //recorre cada palabra de la frase
+        {
+            string palabra = palabras[i];
+            //quita signos de puntuación simples
+            string limpia = palabra.Trim(',', '.');
+            //si la palabra existe en el diccionario, la reemplaza
+            if (diccionario.ContainsKey(limpia))
+            {
+                palabras[i] = palabras[i].Replace(limpia, diccionario[limpia]);
+            }
+        }
+        
+    }
+
     
 }
 
