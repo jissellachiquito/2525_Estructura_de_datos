@@ -26,6 +26,15 @@
                 string traduccion = traductor.Traducir(frase); //traduce usando la clase Traductor
                 System.Console.WriteLine("Traduccion: " + traduccion);
             }
+            //opcion 2 para agregar nueva palabra al diccionario
+            else if (opcion == 2)
+            {
+                System.Console.Write("Ingrese palabra en español: ");
+                string esp = System.Console.ReadLine();
+                System.Console.Write("Ingrese traduccion en ingles: ");
+                string ing = System.Console.ReadLine();
+                traductor.AgregarPalabra(esp, ing);  //agrega la palabra al diccionario
+            }
             
         }
     }
