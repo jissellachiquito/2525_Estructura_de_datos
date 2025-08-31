@@ -5,7 +5,8 @@ class Traductor
     //diccionario que almacena clave: español y valor: ingles 
     Dictionary<string, string> diccionario;
 
-    public Traductor() // constructor de la clase traductor que crea el diccionario
+    //constructor de la clase traductor que crea el diccionario
+    public Traductor()
     {
         diccionario = new Dictionary<string, string>();
         Inicializar();
