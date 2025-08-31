@@ -18,7 +18,15 @@
             string entrada = System.Console.ReadLine(); //lee la entrada del usuario  como texto
             int.TryParse(entrada, out opcion);//convierte la entrada a numero,si es un numero valido, lo asigna a la variable opcion.
              
-
+            //opcion 1 para traducir una frase
+            if (opcion == 1)
+            {
+                System.Console.Write("Ingrese una frase en español: ");
+                string frase = System.Console.ReadLine(); //lee frase del usuario
+                string traduccion = traductor.Traducir(frase); //traduce usando la clase Traductor
+                System.Console.WriteLine("Traduccion: " + traduccion);
+            }
+            
         }
     }
 }
