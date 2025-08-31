@@ -6,7 +6,10 @@
         Traductor traductor = new Traductor();
         int opcion = -1; //variable para almacenar la opcion del usuario
 
-        
+        while (opcion != 0)
+        {
+            
+        }
     }
 }
 
