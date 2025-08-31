@@ -1,4 +1,14 @@
-﻿
+﻿class Program
+{
+    static void Main()
+    {
+        //se crea una instancia de la clase Traductor
+        Traductor traductor = new Traductor();
+        
+
+        
+    }
+}
 
 
 
