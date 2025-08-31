@@ -41,7 +41,7 @@ class Traductor
                 palabras[i] = palabras[i].Replace(limpia, diccionario[limpia]);
             }
         }
-        
+        return string.Join(" ", palabras); //une las palabras ya traducidas en una frase y la devuelve
     }
 
     
