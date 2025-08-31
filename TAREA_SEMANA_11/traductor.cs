@@ -33,7 +33,7 @@ class Traductor
         for (int i = 0; i < palabras.Length; i++) //recorre cada palabra de la frase
         {
             string palabra = palabras[i];
-            //quita signos de puntuación simples
+            //quita signos de puntuacion simples
             string limpia = palabra.Trim(',', '.');
             //si la palabra existe en el diccionario, la reemplaza
             if (diccionario.ContainsKey(limpia))
@@ -44,7 +44,19 @@ class Traductor
         return string.Join(" ", palabras); //une las palabras ya traducidas en una frase y la devuelve
     }
 
-    
+    //permite agregar nuevas palabras al diccionario
+    public void AgregarPalabra(string espanol, string ingles)
+    {
+        if (!diccionario.ContainsKey(espanol.ToLower()))//verifica si la palabra en español no existe aun en el diccionario
+        {
+            diccionario.Add(espanol.ToLower(), ingles.ToLower());//agrega la palabra en español como clave y la traduccion en ingles como valor
+            System.Console.WriteLine("Palabra agregada correctamente.");//muestra que la palabra se agrego correctamente
+        }
+        else
+        {
+            System.Console.WriteLine("La palabra ya existe en el diccionario.");//si la palabra ya existe, muestra que no se puede agregar 
+        }
+    }
 }
 
 
