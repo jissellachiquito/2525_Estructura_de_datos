@@ -8,6 +8,13 @@
 
         while (opcion != 0)
         {
+            //muestra menu y sus opciones 
+            System.Console.WriteLine("\n==================== MENÚ ====================");
+            System.Console.WriteLine("1. Traducir una frase");
+            System.Console.WriteLine("2. Agregar palabras al diccionario");
+            System.Console.WriteLine("3. Salir");
+            System.Console.Write("Seleccione una opcion: ");
+
             
         }
     }
