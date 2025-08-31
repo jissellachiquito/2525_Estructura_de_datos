@@ -15,7 +15,10 @@
             System.Console.WriteLine("3. Salir");
             System.Console.Write("Seleccione una opcion: ");
 
-            
+            string entrada = System.Console.ReadLine(); //lee la entrada del usuario  como texto
+            int.TryParse(entrada, out opcion);//convierte la entrada a numero,si es un numero valido, lo asigna a la variable opcion.
+             
+
         }
     }
 }
