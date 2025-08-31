@@ -4,7 +4,7 @@
     {
         //se crea una instancia de la clase Traductor
         Traductor traductor = new Traductor();
-        
+        int opcion = -1; //variable para almacenar la opcion del usuario
 
         
     }
