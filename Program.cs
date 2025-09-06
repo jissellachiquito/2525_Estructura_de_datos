@@ -60,10 +60,18 @@
                     sistema.ConsultarPorDisciplina(consulta);//busca y muestra los deportistas de esa disciplina
                     break;
 
-                
+                //opcion 5 para salir del sistema
+                case 5:
+                    Console.WriteLine("Saliendo del sistema...");//muestra la salida del sistema
+                    break;
+
+                default:
+                    
+                    Console.WriteLine("Opcion invalida. Intente nuevamente."); //se muestra en caso de una opcion invalida
+                    break;
             }
         }
-        
+        while (opcion != 5); //se repite hasta que el usuario elija salir
     }
 }
  
