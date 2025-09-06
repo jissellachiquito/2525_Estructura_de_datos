@@ -47,6 +47,11 @@
                     sistema.AgregarDeportista(d, deportista); //registra al deportista en la disciplina indicada
                     break;
                 
+                //opcion 3 para mostrar todas las disciplinas con todos sus deportistas
+                case 3:
+                    sistema.MostrarPremiados(); //muestra en consola la lista completa de premiados
+                    break;
+
                 
             }
         }
