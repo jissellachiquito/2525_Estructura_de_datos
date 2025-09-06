@@ -43,7 +43,22 @@ class PremioDeportistas
     //metodo que muestra todos los premiados en todas las disciplinas
     public void MostrarPremiados()
     {
-       
+        foreach (var par in disciplinas) //recorre todas las disciplinas registradas
+        {
+            Console.WriteLine($"\nDisciplina: {par.Key}"); //imprime el nombre de la disciplina
+
+            if (par.Value.Count == 0) //cuando no hay deportistas registrados en esa disciplina
+            {
+                Console.WriteLine("  (Sin deportistas registrados)");//muestra que no hay ningun registro
+            }
+            else
+            {
+                foreach (var deportista in par.Value) //muestra cada deportista dentro de la disciplina
+                {
+                    Console.WriteLine($"  - {deportista}");
+                }
+            }
+        }
     }
 
     
