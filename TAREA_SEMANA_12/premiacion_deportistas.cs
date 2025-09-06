@@ -61,6 +61,10 @@ class PremioDeportistas
         }
     }
 
-    
+    //metodo para consultar los deportistas de una disciplina en especifico
+    public void ConsultarPorDisciplina(string disciplina)
+    {
+       
+    }
 }
 
