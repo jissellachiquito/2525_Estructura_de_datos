@@ -40,6 +40,12 @@ class PremioDeportistas
         }
     }
 
+    //metodo que muestra todos los premiados en todas las disciplinas
+    public void MostrarPremiados()
+    {
+       
+    }
+
     
 }
 
