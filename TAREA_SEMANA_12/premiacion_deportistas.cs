@@ -25,6 +25,13 @@ class PremioDeportistas
         }
     }
 
+    //metodo para agregar un deportista a una disciplina
+    public void AgregarDeportista(string disciplina, string deportista)
+    {
+
+        
+    }
+
     
 }
 
