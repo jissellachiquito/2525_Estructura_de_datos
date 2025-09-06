@@ -19,14 +19,20 @@
             Console.Write("Seleccione una opción: ");
 
 
-            //se verifica, si es un numero valido, lo asigna a la variable opcion.
+            //se verfica, si es un numero valido, lo asigna a la variable opcion.
             if (!int.TryParse(Console.ReadLine(), out opcion))
             {
                 Console.WriteLine("Entrada invalida. Intente nuevamente."); //en caso de que no vuelve al inicio del menu
                 continue; 
             }
 
-            
+            //opciones del menu
+            switch (opcion)
+            {
+              
+
+                
+            }
         }
         
     }
