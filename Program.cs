@@ -6,7 +6,12 @@
         PremioDeportistas sistema = new PremioDeportistas();
         int opcion;
 
-        
+        //bucle principal del menu
+        do
+        {
+            
+        }
+        while 
     }
 }
  
