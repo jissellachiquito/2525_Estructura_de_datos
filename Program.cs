@@ -9,9 +9,19 @@
         //bucle principal del menu
         do
         {
+            //menu de opciones
+            Console.WriteLine("\n------- SISTEMA DE PREMIACION DEPORTIVA -------");
+            Console.WriteLine("1. Agregar disciplina:");
+            Console.WriteLine("2. Agregar deportista a disciplina:");
+            Console.WriteLine("3. Mostrar todos los premiados:");
+            Console.WriteLine("4. Consultar por disciplina:");
+            Console.WriteLine("5. Salir");
+            Console.Write("Seleccione una opción: ");
+
+
             
         }
-        while 
+        
     }
 }
  
