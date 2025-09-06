@@ -2,6 +2,10 @@
 {
     static void Main()
     {
+        //se crea una instancia del sistema de premiacion
+        PremioDeportistas sistema = new PremioDeportistas();
+        int opcion;
+
         
     }
 }
