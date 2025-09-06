@@ -29,7 +29,13 @@
             //opciones del menu
             switch (opcion)
             {
-              
+                //opcion 1 para agregar una nueva disciplina al sistema
+                case 1:
+                    
+                    Console.Write("Ingrese el nombre de la disciplina: ");
+                    string disciplina = Console.ReadLine();
+                    sistema.AgregarDisciplina(disciplina); //llama al metodo agregarDisciplina 
+                    break;
 
                 
             }
