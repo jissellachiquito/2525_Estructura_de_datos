@@ -52,6 +52,14 @@
                     sistema.MostrarPremiados(); //muestra en consola la lista completa de premiados
                     break;
 
+                //opcion 4 para consultar y muestra deportistas de una disciplina en especifico
+                case 4:
+                    
+                    Console.Write("Ingrese el nombre de la disciplina: ");
+                    string consulta = Console.ReadLine();
+                    sistema.ConsultarPorDisciplina(consulta);//busca y muestra los deportistas de esa disciplina
+                    break;
+
                 
             }
         }
