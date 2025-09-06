@@ -64,7 +64,24 @@ class PremioDeportistas
     //metodo para consultar los deportistas de una disciplina en especifico
     public void ConsultarPorDisciplina(string disciplina)
     {
-       
+        if (disciplinas.ContainsKey(disciplina)) //verifica si la disciplina existe
+        {
+            Console.WriteLine($"\nPremiados en {disciplina}:");
+
+            foreach (var d in disciplinas[disciplina]) //recorre y muestra todos los deportistas de esa disciplina
+            {
+                Console.WriteLine($"  - {d}");
+            }
+
+            if (disciplinas[disciplina].Count == 0)//en caso de que no tenga deportistas registrados
+            {
+                Console.WriteLine("  (Sin deportistas registrados)");
+            }
+        }
+        else
+        {
+            Console.WriteLine($"La disciplina '{disciplina}' no existe.");//si no existe la disciplina consultada
+        }
     }
 }
 
