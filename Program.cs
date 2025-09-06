@@ -37,6 +37,16 @@
                     sistema.AgregarDisciplina(disciplina); //llama al metodo agregarDisciplina 
                     break;
 
+                //opcion 2 para agregar un deportista a una disciplina 
+                case 2:
+
+                    Console.Write("Ingrese el nombre de la disciplina: "); //agregar la disciplina
+                    string d = Console.ReadLine();
+                    Console.Write("Ingrese el nombre del deportista: ");  //agregar el deportista
+                    string deportista = Console.ReadLine();
+                    sistema.AgregarDeportista(d, deportista); //registra al deportista en la disciplina indicada
+                    break;
+                
                 
             }
         }
