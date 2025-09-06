@@ -1,85 +1,77 @@
-﻿class Program
-{
-    static void Main()
-    {
-        //se crea una instancia de la clase Traductor
-        Traductor traductor = new Traductor();
-        int opcion = -1; //variable para almacenar la opcion del usuario
+﻿
+ 
 
-        while (opcion != 0)
-        {
-            //muestra menu y sus opciones 
-            System.Console.WriteLine("\n==================== MENÚ ====================");
-            System.Console.WriteLine("1. Traducir una frase");
-            System.Console.WriteLine("2. Agregar palabras al diccionario");
-            System.Console.WriteLine("3. Salir");
-            System.Console.Write("Seleccione una opcion: ");
 
-            string entrada = System.Console.ReadLine(); //lee la entrada del usuario  como texto
-            int.TryParse(entrada, out opcion);//convierte la entrada a numero,si es un numero valido, lo asigna a la variable opcion.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SEMANA11
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         //se crea una instancia de la clase Traductor
+//         Traductor traductor = new Traductor();
+//         int opcion = -1; //variable para almacenar la opcion del usuario
+
+//         while (opcion != 0)
+//         {
+//             //muestra menu y sus opciones 
+//             System.Console.WriteLine("\n==================== MENÚ ====================");
+//             System.Console.WriteLine("1. Traducir una frase");
+//             System.Console.WriteLine("2. Agregar palabras al diccionario");
+//             System.Console.WriteLine("3. Salir");
+//             System.Console.Write("Seleccione una opcion: ");
+
+//             string entrada = System.Console.ReadLine(); //lee la entrada del usuario  como texto
+//             int.TryParse(entrada, out opcion);//convierte la entrada a numero,si es un numero valido, lo asigna a la variable opcion.
              
-            //opcion 1 para traducir una frase
-            if (opcion == 1)
-            {
-                System.Console.Write("Ingrese una frase en español: ");
-                string frase = System.Console.ReadLine(); //lee frase del usuario
-                string traduccion = traductor.Traducir(frase); //traduce usando la clase Traductor
-                System.Console.WriteLine("Traduccion: " + traduccion);
-            }
-            //opcion 2 para agregar nueva palabra al diccionario
-            else if (opcion == 2)
-            {
-                System.Console.Write("Ingrese palabra en español: ");
-                string esp = System.Console.ReadLine();
-                System.Console.Write("Ingrese traduccion en ingles: ");
-                string ing = System.Console.ReadLine();
-                traductor.AgregarPalabra(esp, ing);  //agrega la palabra al diccionario
-            }
-            //opcion 3 para sali del programa
-            else if (opcion == 3)
-            {
-                System.Console.WriteLine("Saliendo del programa.....");
-            }
-            //en caso de cualquier otra opcion invalida
-            else
-            {
-                System.Console.WriteLine("Intente de nuevo,opcion invalida. ......");
-            }
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//             //opcion 1 para traducir una frase
+//             if (opcion == 1)
+//             {
+//                 System.Console.Write("Ingrese una frase en español: ");
+//                 string frase = System.Console.ReadLine(); //lee frase del usuario
+//                 string traduccion = traductor.Traducir(frase); //traduce usando la clase Traductor
+//                 System.Console.WriteLine("Traduccion: " + traduccion);
+//             }
+//             //opcion 2 para agregar nueva palabra al diccionario
+//             else if (opcion == 2)
+//             {
+//                 System.Console.Write("Ingrese palabra en español: ");
+//                 string esp = System.Console.ReadLine();
+//                 System.Console.Write("Ingrese traduccion en ingles: ");
+//                 string ing = System.Console.ReadLine();
+//                 traductor.AgregarPalabra(esp, ing);  //agrega la palabra al diccionario
+//             }
+//             //opcion 3 para sali del programa
+//             else if (opcion == 3)
+//             {
+//                 System.Console.WriteLine("Saliendo del programa.....");
+//             }
+//             //en caso de cualquier otra opcion invalida
+//             else
+//             {
+//                 System.Console.WriteLine("Intente de nuevo,opcion invalida. ......");
+//             }
+//         }
+//     }
+// }
 
 
 
