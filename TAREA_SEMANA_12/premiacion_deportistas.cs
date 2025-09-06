@@ -29,7 +29,15 @@ class PremioDeportistas
     public void AgregarDeportista(string disciplina, string deportista)
     {
 
-        
+        if (disciplinas.ContainsKey(disciplina)) //se verifica que la disciplina exista
+        {
+            disciplinas[disciplina].Add(deportista); //agrega el deportista al conjunto 
+            Console.WriteLine($"Deportista '{deportista}' agregado a {disciplina}.");
+        }
+        else
+        {
+            Console.WriteLine($"La disciplina '{disciplina}' no existe.");//en caso de que la disciplina no exista,muestra al ususario
+        }
     }
 
     
