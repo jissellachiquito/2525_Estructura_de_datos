@@ -10,6 +10,12 @@ class PremioDeportistas
         disciplinas = new Dictionary<string, HashSet<string>>();
     }
 
+    //metodo para agregar una nueva disciplina en el sistema
+    public void AgregarDisciplina(string disciplina)
+    {
+        
+    }
+
     
 }
 
