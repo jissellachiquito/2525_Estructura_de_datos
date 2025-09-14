@@ -38,7 +38,7 @@ class Program
 
                 //opcion 2 para buscar un titulo en especifico 
                 case 2:
-                    Console.Write("\nIngrese el titulo a buscar: "); //muestra para ingresar el titulo
+                    Console.Write("\nIngrese el titulo a buscar: "); //muestra texto para ingresar el titulo
                     string titulo = Console.ReadLine();
 
                     bool encontrado = catalogo.BuscarRevista(titulo); //busca el titulo de interes
@@ -50,7 +50,14 @@ class Program
                         Console.WriteLine("No encontrado, vuelve a intentarlo.......");
                     break;
 
-                
+                //opcion 3 para salir 
+                case 3:
+                    Console.WriteLine("Saliendo del programa...");
+                    break;
+
+                default:
+                    Console.WriteLine("Opcion invalida.");//en caso de otra opcion 
+                    break;
             }
 
         } while (opcion != 3);//se repite hasta que el usuario elija salir 
