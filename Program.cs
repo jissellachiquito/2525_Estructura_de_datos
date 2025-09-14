@@ -19,8 +19,17 @@ class Program
             Console.WriteLine("3. Salir");
             Console.Write("Seleccione una opción: ");
 
+            //se verifica, si es un numero valido, lo asigna a la variable opcion
+            if (!int.TryParse(Console.ReadLine(), out opcion))
+            {
+                Console.WriteLine(" Opcion invalida, intente nuevamente.....");//en caso de que no vuelve al inicio del menu
+                continue;
+            }
+
+
             
-        } while ;
+
+        } while (opcion != 3);//repite el menú  
     }
 }
 
