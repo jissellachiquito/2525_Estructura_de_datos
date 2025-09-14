@@ -1,5 +1,5 @@
 
-// Clase que gestiona el catálogo de revistas
+//clase que gestiona el catalogo de revistas
 class Catalogo
 {
     
