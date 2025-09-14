@@ -1,16 +1,8 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-
+﻿//clase principal 
+class Program
+{
+    
+}
 
 
 
