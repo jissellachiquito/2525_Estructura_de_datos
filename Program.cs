@@ -1,97 +1,101 @@
-﻿class Program
-{
-    static void Main()
-    {
-        //se crea una instancia del sistema de premiacion
-        PremioDeportistas sistema = new PremioDeportistas();
-        int opcion;
-
-        //bucle principal del menu
-        do
-        {
-            //menu de opciones
-            Console.WriteLine("\n------- SISTEMA DE PREMIACION DEPORTIVA -------");
-            Console.WriteLine("1. Agregar disciplina:");
-            Console.WriteLine("2. Agregar deportista a disciplina:");
-            Console.WriteLine("3. Mostrar todos los premiados:");
-            Console.WriteLine("4. Consultar por disciplina:");
-            Console.WriteLine("5. Salir");
-            Console.Write("Seleccione una opción: ");
+﻿
 
 
-            //se verfica, si es un numero valido, lo asigna a la variable opcion.
-            if (!int.TryParse(Console.ReadLine(), out opcion))
-            {
-                Console.WriteLine("Entrada invalida. Intente nuevamente."); //en caso de que no vuelve al inicio del menu
-                continue; 
-            }
 
-            //opciones del menu
-            switch (opcion)
-            {
-                //opcion 1 para agregar una nueva disciplina al sistema
-                case 1:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//TAREA_SEMANA12
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         //se crea una instancia del sistema de premiacion
+//         PremioDeportistas sistema = new PremioDeportistas();
+//         int opcion;
+
+//         //bucle principal del menu
+//         do
+//         {
+//             //menu de opciones
+//             Console.WriteLine("\n------- SISTEMA DE PREMIACION DEPORTIVA -------");
+//             Console.WriteLine("1. Agregar disciplina:");
+//             Console.WriteLine("2. Agregar deportista a disciplina:");
+//             Console.WriteLine("3. Mostrar todos los premiados:");
+//             Console.WriteLine("4. Consultar por disciplina:");
+//             Console.WriteLine("5. Salir");
+//             Console.Write("Seleccione una opción: ");
+
+
+//             //se verfica, si es un numero valido, lo asigna a la variable opcion.
+//             if (!int.TryParse(Console.ReadLine(), out opcion))
+//             {
+//                 Console.WriteLine("Entrada invalida. Intente nuevamente."); //en caso de que no vuelve al inicio del menu
+//                 continue; 
+//             }
+
+//             //opciones del menu
+//             switch (opcion)
+//             {
+//                 //opcion 1 para agregar una nueva disciplina al sistema
+//                 case 1:
                     
-                    Console.Write("Ingrese el nombre de la disciplina: ");
-                    string disciplina = Console.ReadLine();
-                    sistema.AgregarDisciplina(disciplina); //llama al metodo agregarDisciplina 
-                    break;
+//                     Console.Write("Ingrese el nombre de la disciplina: ");
+//                     string disciplina = Console.ReadLine();
+//                     sistema.AgregarDisciplina(disciplina); //llama al metodo agregarDisciplina 
+//                     break;
 
-                //opcion 2 para agregar un deportista a una disciplina 
-                case 2:
+//                 //opcion 2 para agregar un deportista a una disciplina 
+//                 case 2:
 
-                    Console.Write("Ingrese el nombre de la disciplina: "); //agregar la disciplina
-                    string d = Console.ReadLine();
-                    Console.Write("Ingrese el nombre del deportista: ");  //agregar el deportista
-                    string deportista = Console.ReadLine();
-                    sistema.AgregarDeportista(d, deportista); //registra al deportista en la disciplina indicada
-                    break;
+//                     Console.Write("Ingrese el nombre de la disciplina: "); //agregar la disciplina
+//                     string d = Console.ReadLine();
+//                     Console.Write("Ingrese el nombre del deportista: ");  //agregar el deportista
+//                     string deportista = Console.ReadLine();
+//                     sistema.AgregarDeportista(d, deportista); //registra al deportista en la disciplina indicada
+//                     break;
                 
-                //opcion 3 para mostrar todas las disciplinas con todos sus deportistas
-                case 3:
-                    sistema.MostrarPremiados(); //muestra en consola la lista completa de premiados
-                    break;
+//                 //opcion 3 para mostrar todas las disciplinas con todos sus deportistas
+//                 case 3:
+//                     sistema.MostrarPremiados(); //muestra en consola la lista completa de premiados
+//                     break;
 
-                //opcion 4 para consultar y muestra deportistas de una disciplina en especifico
-                case 4:
+//                 //opcion 4 para consultar y muestra deportistas de una disciplina en especifico
+//                 case 4:
                     
-                    Console.Write("Ingrese el nombre de la disciplina: ");
-                    string consulta = Console.ReadLine();
-                    sistema.ConsultarPorDisciplina(consulta);//busca y muestra los deportistas de esa disciplina
-                    break;
+//                     Console.Write("Ingrese el nombre de la disciplina: ");
+//                     string consulta = Console.ReadLine();
+//                     sistema.ConsultarPorDisciplina(consulta);//busca y muestra los deportistas de esa disciplina
+//                     break;
 
-                //opcion 5 para salir del sistema
-                case 5:
-                    Console.WriteLine("Saliendo del sistema...");//muestra la salida del sistema
-                    break;
+//                 //opcion 5 para salir del sistema
+//                 case 5:
+//                     Console.WriteLine("Saliendo del sistema...");//muestra la salida del sistema
+//                     break;
 
-                default:
+//                 default:
                     
-                    Console.WriteLine("Opcion invalida. Intente nuevamente."); //se muestra en caso de una opcion invalida
-                    break;
-            }
-        }
-        while (opcion != 5); //se repite hasta que el usuario elija salir
-    }
-}
+//                     Console.WriteLine("Opcion invalida. Intente nuevamente."); //se muestra en caso de una opcion invalida
+//                     break;
+//             }
+//         }
+//         while (opcion != 5); //se repite hasta que el usuario elija salir
+//     }
+// }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
