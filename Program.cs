@@ -27,7 +27,11 @@ class Program
             }
 
 
-            
+            //opciones del menu
+            switch (opcion)
+            {
+                
+            }
 
         } while (opcion != 3);//repite el menú  
     }
