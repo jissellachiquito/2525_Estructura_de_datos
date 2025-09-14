@@ -11,8 +11,15 @@ class Program
         //bucle principal del menu
         do
         {
-            
+            //menu de opciones
+            Console.WriteLine("\n========= MENÚ =========");
+            Console.WriteLine("\n=== CATÁLOGO DE REVISTAS ===");
+            Console.WriteLine("1. Mostrar catálogo");
+            Console.WriteLine("2. Buscar revista");
+            Console.WriteLine("3. Salir");
+            Console.Write("Seleccione una opción: ");
 
+            
         } while ;
     }
 }
