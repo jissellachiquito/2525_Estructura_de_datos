@@ -50,5 +50,12 @@ class Catalogo
         return BuscarRecursivo(titulo, indice + 1); //llamada recursiva al siguiente elemento
     }
 
-    
+    //metodo para mostrar todos los titulos
+    public void MostrarRevistas()
+    {
+        for (int i = 0; i < revistas.Length; i++) //recorre el arreglo de revistas desde la primera hasta la ultima
+        {
+            System.Console.WriteLine($"{i + 1}. {revistas[i]}");//imprime el numero de posicion y el titulo de la revista
+        }
+    }
 }
