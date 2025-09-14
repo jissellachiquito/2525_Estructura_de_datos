@@ -30,10 +30,16 @@ class Program
             //opciones del menu
             switch (opcion)
             {
+                //opcion 1 para mostrar todo el catalogo de revistas 
+                case 1:
+                    Console.WriteLine("\n--- CATÁLOGO DE REVISTAS  ---");
+                    catalogo.MostrarRevistas(); //muestra todo
+                    break;
+
                 
             }
 
-        } while (opcion != 3);//repite el menú  
+        } while (opcion != 3);//repite el menu  
     }
 }
 
