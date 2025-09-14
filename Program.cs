@@ -8,7 +8,12 @@ class Program
         Catalogo catalogo = new Catalogo(); 
         int opcion;
         
-        
+        //bucle principal del menu
+        do
+        {
+            
+
+        } while ;
     }
 }
 
