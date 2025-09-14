@@ -1,7 +1,15 @@
 ﻿//clase principal 
 class Program
 {
-    
+    static void Main(string[] args)
+
+    {
+        //se crea una instancia del catalogo
+        Catalogo catalogo = new Catalogo(); 
+        int opcion;
+        
+        
+    }
 }
 
 
