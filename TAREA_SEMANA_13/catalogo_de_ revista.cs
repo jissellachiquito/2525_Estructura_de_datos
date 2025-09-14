@@ -10,7 +10,7 @@ class Catalogo
     {
         revistas = new string[]
         {
-           "Innovación Global",
+           "Innovacion Global",
             "Ecomundo Verde",
             "Codigos & Algoritmos",
             "Viajeros del Tiempo",
@@ -21,9 +21,15 @@ class Catalogo
             "Exploradores Cosmicos",
             "Misterios Ancestrales",
             "Arte Digital ",
-            "Energia y Sostenibilidad"
+            "Energia y Sostenibilidad"            
         };
     }
 
-    
+    //metodo para iniciar la busqueda recursiva
+    public bool BuscarRevista(string titulo)
+    {
+        return BuscarRecursivo(titulo, 0);
+    }
+
+   
 }
