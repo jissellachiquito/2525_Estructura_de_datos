@@ -36,10 +36,24 @@ class Program
                     catalogo.MostrarRevistas(); //muestra todo
                     break;
 
+                //opcion 2 para buscar un titulo en especifico 
+                case 2:
+                    Console.Write("\nIngrese el titulo a buscar: "); //muestra para ingresar el titulo
+                    string titulo = Console.ReadLine();
+
+                    bool encontrado = catalogo.BuscarRevista(titulo); //busca el titulo de interes
+
+                    //muestra si se encontro o no 
+                    if (encontrado)
+                        Console.WriteLine("Encontrado con exito......");
+                    else
+                        Console.WriteLine("No encontrado, vuelve a intentarlo.......");
+                    break;
+
                 
             }
 
-        } while (opcion != 3);//repite el menu  
+        } while (opcion != 3);//se repite hasta que el usuario elija salir 
     }
 }
 
