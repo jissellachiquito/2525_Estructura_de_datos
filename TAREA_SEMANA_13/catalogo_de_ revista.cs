@@ -31,5 +31,24 @@ class Catalogo
         return BuscarRecursivo(titulo, 0);
     }
 
-   
+    //metodo recursivo que busca el titulo en el catalogo
+    private bool BuscarRecursivo(string titulo, int indice)
+    {
+        //caso cuando si llegamos al final del arreglo y no se encontro
+        if (indice >= revistas.Length)
+        {
+            return false; //no se encontro el titulo en el catalogo
+        }
+
+        //comparamos el titulo en la posicion actual con el titulo ingresado.
+
+        if (revistas[indice].ToLower() == titulo.ToLower())
+        {
+            return true; // el titulo fue ncontrado
+        }
+
+        return BuscarRecursivo(titulo, indice + 1); //llamada recursiva al siguiente elemento
+    }
+
+    
 }
